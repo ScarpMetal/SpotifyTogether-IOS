@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C994871D1F4522AF00441042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994871C1F4522AF00441042 /* AppDelegate.swift */; };
-		C994871F1F4522AF00441042 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994871E1F4522AF00441042 /* FirstViewController.swift */; };
-		C99487211F4522AF00441042 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99487201F4522AF00441042 /* SecondViewController.swift */; };
 		C99487241F4522AF00441042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99487221F4522AF00441042 /* Main.storyboard */; };
 		C99487261F4522AF00441042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99487251F4522AF00441042 /* Assets.xcassets */; };
 		C99487291F4522AF00441042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99487271F4522AF00441042 /* LaunchScreen.storyboard */; };
+		C99487331F45307000441042 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99487321F45307000441042 /* Cells.swift */; };
+		C99487351F45324800441042 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99487341F45324800441042 /* Song.swift */; };
+		C99487371F45344300441042 /* QueueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99487361F45344300441042 /* QueueTableViewController.swift */; };
+		C994873B1F453B4300441042 /* QueueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994873A1F453B4300441042 /* QueueDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C99487191F4522AF00441042 /* SpotifyTogetherIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyTogetherIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C994871C1F4522AF00441042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C994871E1F4522AF00441042 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		C99487201F4522AF00441042 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C99487231F4522AF00441042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C99487251F4522AF00441042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99487281F4522AF00441042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C994872A1F4522AF00441042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99487321F45307000441042 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		C99487341F45324800441042 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		C99487361F45344300441042 /* QueueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTableViewController.swift; sourceTree = "<group>"; };
+		C994873A1F453B4300441042 /* QueueDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				C994871C1F4522AF00441042 /* AppDelegate.swift */,
-				C994871E1F4522AF00441042 /* FirstViewController.swift */,
-				C99487201F4522AF00441042 /* SecondViewController.swift */,
 				C99487221F4522AF00441042 /* Main.storyboard */,
+				C99487361F45344300441042 /* QueueTableViewController.swift */,
+				C994873A1F453B4300441042 /* QueueDetailsViewController.swift */,
+				C99487341F45324800441042 /* Song.swift */,
+				C99487321F45307000441042 /* Cells.swift */,
 				C99487251F4522AF00441042 /* Assets.xcassets */,
 				C99487271F4522AF00441042 /* LaunchScreen.storyboard */,
 				C994872A1F4522AF00441042 /* Info.plist */,
@@ -99,6 +105,7 @@
 				TargetAttributes = {
 					C99487181F4522AF00441042 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UAS988P84K;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99487211F4522AF00441042 /* SecondViewController.swift in Sources */,
+				C99487351F45324800441042 /* Song.swift in Sources */,
+				C99487371F45344300441042 /* QueueTableViewController.swift in Sources */,
 				C994871D1F4522AF00441042 /* AppDelegate.swift in Sources */,
-				C994871F1F4522AF00441042 /* FirstViewController.swift in Sources */,
+				C99487331F45307000441042 /* Cells.swift in Sources */,
+				C994873B1F453B4300441042 /* QueueDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UAS988P84K;
 				INFOPLIST_FILE = SpotifyTogetherIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Roc.SpotifyTogetherIOS;
@@ -276,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UAS988P84K;
 				INFOPLIST_FILE = SpotifyTogetherIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Roc.SpotifyTogetherIOS;
